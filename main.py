@@ -57,7 +57,6 @@ async def get_user(user_id:int):
             return user
     raise HTTPException(status_code=404, detail="user is not found")
 
-
 class NewBook(BaseModel):
     title: str
     author: str
